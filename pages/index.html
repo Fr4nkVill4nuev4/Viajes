@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/index.css">
     <title>Viajes aventura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Viajes aventura</h1>
-        <nav>
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav id="main-nav">
             <ul>
                 <li><a href="">Inicio</a></li>
                 <li><a href="">Destino</a></li>
@@ -24,53 +31,137 @@
             <article>
                 <img src="../images/acapulco.jpg" alt="acapulco">
                 <h1>Acapulco mexico</h1>
-                <p>
-                    Acapulco: Un destino turístico vibrante y fascinante
-Acapulco, México, es un destino turístico vibrante y fascinante que ofrece una combinación perfecta de playas hermosas, cultura rica, gastronomía deliciosa y actividades emocionantes. Ubicado en el estado de Guerrero, Acapulco es uno de los destinos turísticos más importantes de México1. Si estás buscando un lugar para relajarte, disfrutar del sol y la arena, explorar la historia y sumergirte en la vida nocturna, Acapulco es el destino ideal para ti.
-
-Acapulco cuenta con 33 km de playas que se dividen en tres grandes zonas turísticas: Acapulco Tradicional, Acapulco Dorado y Acapulco Diamante.
-
-Acapulco Tradicional: Es la parte antigua del puerto, donde se encuentra el centro de la ciudad, los barrios históricos y el puerto1. Aquí puedes encontrar algunos de los hoteles más antiguos del puerto y restaurantes con platillos típicos1. Camina por el malecón, donde encontrarás una catedral, puestos de periódicos y cafés rodeados de árboles frondosos.
-
-Acapulco Dorado: Es la zona con mayor afluencia turística en el puerto1. Recorre gran parte de la bahía de Acapulco y cuenta con varios hoteles. Encontrarás una gran infraestructura hotelera, centros nocturnos exóticos, restaurantes con vista a la bahía, galerías de arte, joyerías, boutiques, centros comerciales y mercados de artesanías.
-
-Acapulco Diamante: Es la parte más nueva del puerto, con hoteles exclusivos y resorts de cadenas internacionales, complejos residenciales, condominios de lujo y villas privadas.
-                </p>
+                <div class="content-wrapper">
+                    <p class="preview-text">
+                        Acapulco: Un destino turístico vibrante y fascinante...
+                    </p>
+                    <p class="full-content hidden">
+                        Acapulco: Un destino turístico vibrante y fascinante
+                        Acapulco, México, es un destino turístico vibrante y fascinante que ofrece una combinación perfecta de playas hermosas, cultura rica, gastronomía deliciosa y actividades emocionantes. Ubicado en el estado de Guerrero, Acapulco es uno de los destinos turísticos más importantes de México1. Si estás buscando un lugar para relajarte, disfrutar del sol y la arena, explorar la historia y sumergirte en la vida nocturna, Acapulco es el destino ideal para ti.
+ 
+                        Acapulco cuenta con 33 km de playas que se dividen en tres grandes zonas turísticas: Acapulco Tradicional, Acapulco Dorado y Acapulco Diamante.
+ 
+                        Acapulco Tradicional: Es la parte antigua del puerto, donde se encuentra el centro de la ciudad, los barrios históricos y el puerto1. Aquí puedes encontrar algunos de los hoteles más antiguos del puerto y restaurantes con platillos típicos1. Camina por el malecón, donde encontrarás una catedral, puestos de periódicos y cafés rodeados de árboles frondosos.
+ 
+                        Acapulco Dorado: Es la zona con mayor afluencia turística en el puerto1. Recorre gran parte de la bahía de Acapulco y cuenta con varios hoteles. Encontrarás una gran infraestructura hotelera, centros nocturnos exóticos, restaurantes con vista a la bahía, galerías de arte, joyerías, boutiques, centros comerciales y mercados de artesanías.
+ 
+                        Acapulco Diamante: Es la parte más nueva del puerto, con hoteles exclusivos y resorts de cadenas internacionales, complejos residenciales, condominios de lujo y villas privadas.
+                    </p>
+                    <button class="details-btn" onclick="toggleContent(this)">Ver detalles</button>
+                </div>
             </article>
+           
             <article>
                 <img src="../images/puebla.jpg" alt="puebla">
-                <h1>puebla mexico</h1>
-                <p>
-Puebla, ubicada en un valle entre cuatro volcanes, es una ciudad colonial mexicana rica en historia, cultura y belleza arquitectónica. Fundada en 1531, Puebla cuenta con más de 2,000 edificios históricos, que le valieron el reconocimiento de la UNESCO como Patrimonio Cultural de la Humanidad en 1987
-
-Qué ver y hacer
-
-Zócalo: El corazón del centro histórico de Puebla, el Zócalo, es una plaza animada donde los lugareños y turistas se reúnen para relajarse y disfrutar del ambiente1. Aquí, puedes encontrar músicos callejeros, vendedores y cafés.
-
-Catedral de Puebla: En el lado sur del Zócalo se encuentra la impresionante Catedral de Puebla, que exhibe una mezcla de estilos barroco, renacentista y neoclásico. Sube a uno de los campanarios para disfrutar de vistas panorámicas de la ciudad y los volcanes.
-
-Capilla del Rosario: Ubicada dentro del Templo de Santo Domingo, la Capilla del Rosario es una joya del arte barroco novohispano, decorada con oro y detalles intrincados.
-
-Museo Amparo: Descubre el arte precolombino y colonial en el Museo Amparo, ubicado en edificios del siglo XVI.
-
-Pueblos Mágicos: Explora los encantos únicos de los nueve Pueblos Mágicos de Puebla, incluyendo Cholula, Atlixco y Zacatlán de las Manzanas.
-
-Gastronomía: Degusta la gastronomía poblana, resultado de la mezcla indígena-hispana, con platos famosos como el mole poblano
-                </p>
+                <h1>Puebla Mexico</h1>
+                <div class="content-wrapper">
+                    <p class="preview-text">
+                        Puebla, ubicada en un valle entre cuatro volcanes...
+                    </p>
+                    <p class="full-content hidden">
+                        Puebla, ubicada en un valle entre cuatro volcanes, es una ciudad colonial mexicana rica en historia, cultura y belleza arquitectónica. Fundada en 1531, Puebla cuenta con más de 2,000 edificios históricos, que le valieron el reconocimiento de la UNESCO como Patrimonio Cultural de la Humanidad en 1987
+ 
+                        Qué ver y hacer
+ 
+                        Zócalo: El corazón del centro histórico de Puebla, el Zócalo, es una plaza animada donde los lugareños y turistas se reúnen para relajarse y disfrutar del ambiente1. Aquí, puedes encontrar músicos callejeros, vendedores y cafés.
+ 
+                        Catedral de Puebla: En el lado sur del Zócalo se encuentra la impresionante Catedral de Puebla, que exhibe una mezcla de estilos barroco, renacentista y neoclásico. Sube a uno de los campanarios para disfrutar de vistas panorámicas de la ciudad y los volcanes.
+ 
+                        Capilla del Rosario: Ubicada dentro del Templo de Santo Domingo, la Capilla del Rosario es una joya del arte barroco novohispano, decorada con oro y detalles intrincados.
+ 
+                        Museo Amparo: Descubre el arte precolombino y colonial en el Museo Amparo, ubicado en edificios del siglo XVI.
+ 
+                        Pueblos Mágicos: Explora los encantos únicos de los nueve Pueblos Mágicos de Puebla, incluyendo Cholula, Atlixco y Zacatlán de las Manzanas.
+ 
+                        Gastronomía: Degusta la gastronomía poblana, resultado de la mezcla indígena-hispana, con platos famosos como el mole poblano
+                    </p>
+                    <button class="details-btn" onclick="toggleContent(this)">Ver detalles</button>
+                </div>
             </article>
             <article>
                 <img src="../images/cdmx.jpg" alt="cdmx">
                 <h1>Ciudad de Mexico</h1>
-                <p>
-La Ciudad de México, capital de México, es una de las ciudades más grandes y vibrantes del mundo, con una historia de más de 700 años. Aquí convergen ruinas precolombinas, arquitectura colonial y modernidad, ofreciendo una experiencia inolvidable a sus visitantes
-Cultura e Historia
-
-El Centro Histórico de la Ciudad de México, declarado Patrimonio de la Humanidad por la UNESCO, alberga numerosos edificios coloniales y monumentos históricos13. Recorre el Zócalo, la plaza principal, y visita la Catedral Metropolitana y el Palacio Nacional para sumergirte en la historia de México234. Explora el Templo Mayor, vestigio de la antigua capital azteca, Tenochtitlán
-                </p>
+                <div class="content-wrapper">
+                    <p class="preview-text">
+                        La Ciudad de México, capital de México...
+                    </p>
+                    <p class="full-content hidden">
+                        La Ciudad de México, capital de México, es una de las ciudades más grandes y vibrantes del mundo, con una historia de más de 700 años. Aquí convergen ruinas precolombinas, arquitectura colonial y modernidad, ofreciendo una experiencia inolvidable a sus visitantes
+                        Cultura e Historia
+ 
+                        El Centro Histórico de la Ciudad de México, declarado Patrimonio de la Humanidad por la UNESCO, alberga numerosos edificios coloniales y monumentos históricos13. Recorre el Zócalo, la plaza principal, y visita la Catedral Metropolitana y el Palacio Nacional para sumergirte en la historia de México234. Explora el Templo Mayor, vestigio de la antigua capital azteca, Tenochtitlán
+                    </p>
+                    <button class="details-btn" onclick="toggleContent(this)">Ver detalles</button>
+                </div>
             </article>
-            <article></article>
-            <article></article>
+            <article>
+                <img src="../images/berlin.jpg" alt="berlin">
+                <h1>Alemania Berlin</h1>
+                <div class="content-wrapper">
+                    <p class="preview-text">
+                        Berlín, una ciudad llena de historia y cultura...
+                    </p>
+                    <p class="full-content hidden">
+                        La Ciudad de México, capital de México, es una de las ciudades más grandes y vibrantes del mundo, con una historia de más de 700 años. Aquí convergen ruinas precolombinas, arquitectura colonial y modernidad, ofreciendo una experiencia inolvidable a sus visitantes
+                        Cultura e Historia
+ 
+                        El Centro Histórico de la Ciudad de México, declarado Patrimonio de la Humanidad por la UNESCO, alberga numerosos edificios coloniales y monumentos históricos13. Recorre el Zócalo, la plaza principal, y visita la Catedral Metropolitana y el Palacio Nacional para sumergirte en la historia de México234. Explora el Templo Mayor, vestigio de la antigua capital azteca, Tenochtitlán
+                    </p>
+                    <button class="details-btn" onclick="toggleContent(this)">Ver detalles</button>
+                </div>
+            </article>
+            <article>
+                <img src="../images/barcelona.jpg" alt="barcelona">
+                <h1>España Barcelona</h1>
+                <div class="content-wrapper">
+                    <p class="preview-text">
+                        Barcelona, la joya del Mediterráneo...
+                    </p>
+                    <p class="full-content hidden">
+                        La Ciudad de México, capital de México, es una de las ciudades más grandes y vibrantes del mundo, con una historia de más de 700 años. Aquí convergen ruinas precolombinas, arquitectura colonial y modernidad, ofreciendo una experiencia inolvidable a sus visitantes
+                        Cultura e Historia
+ 
+                        El Centro Histórico de la Ciudad de México, declarado Patrimonio de la Humanidad por la UNESCO, alberga numerosos edificios coloniales y monumentos históricos13. Recorre el Zócalo, la plaza principal, y visita la Catedral Metropolitana y el Palacio Nacional para sumergirte en la historia de México234. Explora el Templo Mayor, vestigio de la antigua capital azteca, Tenochtitlán
+                    </p>
+                    <button class="details-btn" onclick="toggleContent(this)">Ver detalles</button>
+                </div>
+            </article>
+            <article>
+                <img src="../images/cdmx.jpg" alt="cdmx">
+                <h1>Ciudad de Mexico</h1>
+                <div class="content-wrapper">
+                    <p class="preview-text">
+                        La Ciudad de México, capital de México...
+                    </p>
+                    <p class="full-content hidden">
+                        La Ciudad de México, capital de México, es una de las ciudades más grandes y vibrantes del mundo, con una historia de más de 700 años. Aquí convergen ruinas precolombinas, arquitectura colonial y modernidad, ofreciendo una experiencia inolvidable a sus visitantes
+                        Cultura e Historia
+ 
+                        El Centro Histórico de la Ciudad de México, declarado Patrimonio de la Humanidad por la UNESCO, alberga numerosos edificios coloniales y monumentos históricos13. Recorre el Zócalo, la plaza principal, y visita la Catedral Metropolitana y el Palacio Nacional para sumergirte en la historia de México234. Explora el Templo Mayor, vestigio de la antigua capital azteca, Tenochtitlán
+                    </p>
+                    <button class="details-btn" onclick="toggleContent(this)">Ver detalles</button>
+                </div>
+            </article>
         </section>
     </div>
+ 
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('main-nav');
+            nav.classList.toggle('active');
+        }
+ 
+        function toggleContent(button) {
+            const wrapper = button.parentElement;
+            const preview = wrapper.querySelector('.preview-text');
+            const fullContent = wrapper.querySelector('.full-content');
+            
+            preview.classList.toggle('hidden');
+            fullContent.classList.toggle('hidden');
+            
+            button.textContent = fullContent.classList.contains('hidden') ? 'Ver detalles' : 'Ver menos';
+        }
+    </script>
 </body>
 </html>
+ 
